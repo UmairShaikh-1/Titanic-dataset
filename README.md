@@ -21,10 +21,10 @@ Surprisingly, passengers with titles like 'Dr.' did not necessarily have a highe
 
 Running the porject:
 1. Clone this repository:
-git clone 
+git clone Titanic Dataset.py
 
 2. Install the required libraries:
 pip install pandas numpy matplotlib seaborn scikit-learn
 
-3. Run the Jupyter Notebook or Python script:
+4. Run the Jupyter Notebook or Python script:
 python Titanic Dataset.py
