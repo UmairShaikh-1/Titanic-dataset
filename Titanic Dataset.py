@@ -17,19 +17,20 @@ print(f"Attempting to load from: {file_path}") # This helps verify the path
 df = pd.read_csv(file_path)
 
 #getting an overview of the data
-'''
+print('------------Overview of the data------------')
 print(df.head())
 print(df.info())
 print(df.describe())
-'''
+
 # Survived, Sex and pclass are our categorical values
 # survived - 0,1
 # Sex - Male, Female
 # pclass - 1,2,3
-'''
+
+print('------------highest frequency for survived------------')
 frequency_survived = df["Survived"].value_counts().idxmax()
 print (frequency_survived)
-'''
+
 #Identifying missing values in the data
 #printing missing values
 '''
@@ -239,11 +240,14 @@ model = LogisticRegression(max_iter=1000)
 model.fit(X_train,Y_train)
 y_pred = model.predict(X_test)
 accuracy = accuracy_score(Y_test,y_pred)
+print('------------Model accuracy------------')
 print(f'model accuracy: {accuracy*100:.2f}')
+print('------------Classification report------------')
 print(classification_report(Y_test,y_pred))
 
 #classification report
 #precision - out of all the predictions made for class 0, 84% were correctly predicted
 #recall - out of all the actual occurences for class 0, 83% were correctly identified
 #f1-score - the harmonic mean for precision and recall of class 0 is 0.83
+
 #support - there were 105 occurences of class 0 in the dataset
