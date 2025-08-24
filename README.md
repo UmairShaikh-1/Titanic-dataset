@@ -21,7 +21,7 @@ Surprisingly, passengers with titles like 'Dr.' did not necessarily have a highe
 
 Running the porject:
 1. Clone this repository:
-git clone Titanic Dataset.py
+git clone [Titanic Dataset.py](https://github.com/UmairShaikh-1/Titanic-dataset)
 
 2. Install the required libraries:
 pip install pandas numpy matplotlib seaborn scikit-learn
